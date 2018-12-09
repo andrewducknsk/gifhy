@@ -1,0 +1,15 @@
+.search {
+	padding: 40px 0;
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
