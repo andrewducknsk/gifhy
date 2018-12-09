@@ -63,6 +63,7 @@ class GifContent extends PureComponent {
 							<ReactPaginate
 								containerClassName='paginate__list'
 								activeClassName='paginate__active'
+								pageClassName='paginate__page'
 								previousClassName='paginate__prev'
 								nextClassName='paginate__next'
 								disabledClassName='paginate__disabled'

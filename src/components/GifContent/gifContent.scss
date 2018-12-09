@@ -81,6 +81,10 @@
 		outline: none;
 	}
 
+	&__page {
+		cursor: pointer;
+	}
+
 	&__prev,
 	&__next {
 		display: inline-block;
@@ -97,5 +101,9 @@
 
 	&__next {
 		transform: rotate(-45deg);
+	}
+
+	&__disabled {
+		opacity: 0.3;
 	}
 }
