@@ -23,7 +23,7 @@ class Search extends PureComponent {
 				<h2 className='search__title'>Search Gif's</h2>
 				<SearchInput
 					fullWidth={true}
-					showIcon={true}
+					showSearchBtn={true}
 					showHeaderSearchBtn={false}
 					placeholder='Enter search phrase'
 				/>

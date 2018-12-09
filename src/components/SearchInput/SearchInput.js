@@ -66,17 +66,20 @@ class SearchInput extends PureComponent {
 
 	onClickSearchBtn = e => {
 		const {fetchSearch} = this.props;
+		const {searchPhrase} = this.state;
 
 		e.preventDefault();
 
-		fetchSearch();
+		if (searchPhrase !== ``) {
+			fetchSearch();
 
-		this.setState({searchPhrase: ``});
+			this.setState({searchPhrase: ``});
 
-		if (window.location.pathname !== '/search') {
-			this.setState({search: true, searchPhrase: ``});
-		} else {
-			this.setState({search: false});
+			if (window.location.pathname !== '/search') {
+				this.setState({search: true, searchPhrase: ``});
+			} else {
+				this.setState({search: false});
+			}
 		}
 	};
 
