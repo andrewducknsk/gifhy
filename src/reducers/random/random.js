@@ -48,6 +48,6 @@ export const random = handleActions(
 		isFetching: false,
 		isFetched: true,
 		error: false,
-		ratingGif: `y`,
+		ratingGif: ``,
 	}
 );

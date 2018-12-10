@@ -13,6 +13,7 @@ import {
 	getRandomIsFetching,
 	getRandomFail,
 	getRandomData,
+	getRatingRandomGif,
 } from '../../reducers';
 // Components
 import Rating from '../Rating/Rating';
@@ -22,9 +23,11 @@ import './random.scss';
 
 class Random extends PureComponent {
 	onClickGetMoreBtn = () => {
-		const {fetchRandom} = this.props;
+		const {fetchRandom, ratingGif} = this.props;
 
-		fetchRandom();
+		if (ratingGif !== ``) {
+			fetchRandom();
+		}
 	};
 
 	onClickDeleteAllBtn = () => {
@@ -68,6 +71,7 @@ const mapStateToProps = state => ({
 	isFetching: getRandomIsFetching(state),
 	error: getRandomFail(state),
 	randomData: getRandomData(state),
+	ratingGif: getRatingRandomGif(state),
 });
 
 const mapDispatchToProps = {
