@@ -3,8 +3,6 @@ const baseSetting = {
 	mode: 'cors',
 };
 
-// const cors = `http://cors-anywhere.herokuapp.com/`;
-
 export const apiKey = `8wFOjFeeDC8is30VqlkwqBV9ofwT9ljn`;
 
 export const trendingGif = (apiKey, offsetGifs, ratingGif) =>
