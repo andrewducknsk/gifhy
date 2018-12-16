@@ -1,3 +1,4 @@
 Project created with use React + Redux/Redux-saga
 
-Demo: https://reduxsaga.netlify.com
+Demo: https://gifhy.herokuapp.com
+
